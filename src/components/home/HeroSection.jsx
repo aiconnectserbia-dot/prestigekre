@@ -177,13 +177,13 @@ export default function HeroSection() {
         <div className="absolute bottom-8 left-8 flex gap-3">
           <button
             onClick={prevSlide}
-            className="w-12 h-12 rounded-lg bg-white shadow-lg flex items-center justify-center text-stone-700 hover:bg-amber-800 hover:text-white transition-all duration-300"
+            className="w-12 h-12 rounded-lg bg-stone-50 shadow-lg flex items-center justify-center text-stone-700 hover:bg-amber-800 hover:text-white transition-all duration-300"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={nextSlide}
-            className="w-12 h-12 rounded-lg bg-white shadow-lg flex items-center justify-center text-stone-700 hover:bg-amber-800 hover:text-white transition-all duration-300"
+            className="w-12 h-12 rounded-lg bg-stone-50 shadow-lg flex items-center justify-center text-stone-700 hover:bg-amber-800 hover:text-white transition-all duration-300"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
