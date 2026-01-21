@@ -1,0 +1,104 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+
+const techniques = [
+  {
+    name: 'Traventino',
+    image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=500&q=80',
+    description: 'Elegantna tekstura koja imitira prirodni kamen',
+  },
+  {
+    name: 'Otocento',
+    image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=500&q=80',
+    description: 'Baršunast završetak sa metalnim sjajem',
+  },
+  {
+    name: 'Marmorino',
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=500&q=80',
+    description: 'Klasična tehnika imitacije mermera',
+  },
+  {
+    name: 'Velvet',
+    image: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=500&q=80',
+    description: 'Mekani, svilenkasti završetak površine',
+  },
+  {
+    name: 'Špatulat',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&q=80',
+    description: 'Moderna tehnika sa glatkim prelivima',
+  },
+  {
+    name: 'Sahara',
+    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80',
+    description: 'Efektna tehnika peščane teksture',
+  },
+];
+
+export default function TechniquesSection() {
+  return (
+    <section className="py-24 bg-white relative overflow-hidden">
+      <div className="container mx-auto px-4 lg:px-8">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+              <div className="w-3 h-3 rounded-full bg-amber-500" />
+            </div>
+            <span className="text-amber-600 font-semibold tracking-wide uppercase text-sm">
+              Vrhunski moleraj
+            </span>
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-800">
+            Dekorativne tehnike
+          </h2>
+        </motion.div>
+
+        {/* Techniques grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {techniques.map((technique, idx) => (
+            <motion.div
+              key={technique.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              viewport={{ once: true }}
+              className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+            >
+              <div className="aspect-[4/5] overflow-hidden">
+                <img
+                  src={technique.image}
+                  alt={technique.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+              
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
+              
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <span className="inline-block px-3 py-1 bg-amber-500/90 text-slate-900 text-xs font-semibold rounded-full mb-3">
+                  Tehnika
+                </span>
+                <h3 className="text-2xl font-bold text-white mb-2">{technique.name}</h3>
+                <p className="text-slate-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {technique.description}
+                </p>
+                <button className="flex items-center gap-2 text-amber-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
+                  Saznaj više <ArrowRight className="w-4 h-4" />
+                </button>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
