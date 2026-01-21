@@ -37,7 +37,7 @@ const techniques = [
 
 export default function TechniquesSection() {
   return (
-    <section className="py-24 bg-stone-100 relative overflow-hidden">
+    <section className="py-12 lg:py-24 bg-stone-100 relative overflow-hidden w-full">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <motion.div
@@ -55,13 +55,13 @@ export default function TechniquesSection() {
               Vrhunski moleraj
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-800">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-800">
             Dekorativne tehnike
           </h2>
         </motion.div>
 
         {/* Techniques grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 overflow-x-auto md:overflow-x-visible pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 lg:mx-0 lg:px-0">
           {techniques.map((technique, idx) => (
             <motion.div
               key={technique.name}
