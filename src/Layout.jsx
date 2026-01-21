@@ -56,9 +56,11 @@ export default function Layout({ children }) {
             <Link to={createPageUrl('Home')} className="flex items-center gap-3 group">
               <div className="relative">
                 <svg className="w-10 h-10 text-amber-800 group-hover:text-amber-900 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M3 12h18M3 6h18M3 18h18" strokeLinecap="round"/>
-                  <path d="M8 3L6 21" strokeLinecap="round"/>
-                  <path d="M16 3L14 21" strokeLinecap="round"/>
+                  <rect x="4" y="4" width="7" height="7" strokeLinecap="round" strokeLinejoin="round"/>
+                  <rect x="13" y="4" width="7" height="7" strokeLinecap="round" strokeLinejoin="round"/>
+                  <rect x="4" y="13" width="7" height="7" strokeLinecap="round" strokeLinejoin="round"/>
+                  <rect x="13" y="13" width="7" height="7" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M4 4L20 20M20 4L4 20" strokeLinecap="round" opacity="0.3"/>
                 </svg>
               </div>
               <div>
