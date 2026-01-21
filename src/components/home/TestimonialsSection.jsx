@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
   const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="py-24 bg-amber-900 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden" style={{ backgroundColor: '#EDDA74' }}>
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 left-10 w-40 h-40 border border-amber-500/20 rounded-full" />
@@ -53,26 +53,26 @@ export default function TestimonialsSection() {
               <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
                 <div className="w-3 h-3 rounded-full bg-amber-500" />
               </div>
-              <span className="text-amber-400 font-semibold tracking-wide uppercase text-sm">
+              <span className="text-amber-800 font-semibold tracking-wide uppercase text-sm">
                 Utisci i preporuke
               </span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
               Šta zadovoljni klijenti{' '}
-              <span className="text-amber-400">kažu o nama.</span>
+              <span className="text-amber-800">kažu o nama.</span>
             </h2>
 
             <div className="flex gap-4 pt-4">
               <button
                 onClick={prev}
-                className="w-14 h-14 rounded-full border-2 border-amber-500/50 flex items-center justify-center text-amber-400 hover:bg-amber-500/20 transition-all"
+                className="w-14 h-14 rounded-full border-2 border-amber-800 flex items-center justify-center text-amber-900 hover:bg-amber-800 hover:text-white transition-all"
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
               <button
                 onClick={next}
-                className="w-14 h-14 rounded-full border-2 border-amber-500/50 flex items-center justify-center text-amber-400 hover:bg-amber-500/20 transition-all"
+                className="w-14 h-14 rounded-full border-2 border-amber-800 flex items-center justify-center text-amber-900 hover:bg-amber-800 hover:text-white transition-all"
               >
                 <ChevronRight className="w-6 h-6" />
               </button>
@@ -103,22 +103,22 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* Quote text */}
-                <p className="text-slate-200 text-lg leading-relaxed mb-8 italic">
+                <p className="text-stone-700 text-lg leading-relaxed mb-8 italic">
                   "{testimonials[current].text}"
                 </p>
 
                 {/* Author */}
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-amber-500/20 flex items-center justify-center">
-                    <span className="text-amber-400 font-bold text-xl">
+                    <span className="text-amber-800 font-bold text-xl">
                       {testimonials[current].author[0]}
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold text-lg">
+                    <h4 className="text-stone-900 font-semibold text-lg">
                       {testimonials[current].author}
                     </h4>
-                    <p className="text-amber-400 text-sm">
+                    <p className="text-amber-800 text-sm">
                       Usluga: {testimonials[current].service}
                     </p>
                   </div>
@@ -136,7 +136,7 @@ export default function TestimonialsSection() {
                   key={idx}
                   onClick={() => setCurrent(idx)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    idx === current ? 'bg-amber-500 w-6' : 'bg-slate-600'
+                    idx === current ? 'bg-amber-800 w-6' : 'bg-stone-400'
                   }`}
                 />
               ))}
