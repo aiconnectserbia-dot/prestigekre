@@ -49,7 +49,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="bg-stone-50 p-10 rounded-2xl shadow-xl"
+              className="bg-white/95 backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-amber-100"
             >
               <motion.div 
                 initial={{ opacity: 0 }}

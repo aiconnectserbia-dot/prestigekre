@@ -49,7 +49,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6 bg-stone-50 p-10 rounded-2xl shadow-xl"
+            className="space-y-6 bg-white p-10 rounded-3xl shadow-xl border border-stone-200"
           >
             <div className="flex items-center gap-3">
               <div className="w-12 h-[2px] bg-amber-800" />

@@ -29,7 +29,7 @@ export default function ContactSection() {
   return (
     <>
       {/* Blog/News Section */}
-      <section className="py-24 relative overflow-hidden" style={{ backgroundColor: '#EDDA74' }}>
+      <section className="py-24 bg-gradient-to-br from-amber-800 to-amber-900 relative overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -42,13 +42,13 @@ export default function ContactSection() {
               <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
                 <div className="w-3 h-3 rounded-full bg-amber-500" />
               </div>
-              <span className="text-amber-800 font-semibold tracking-wide uppercase text-sm">
+              <span className="text-amber-200 font-semibold tracking-wide uppercase text-sm">
                 Stručni vodiči
               </span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-stone-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white">
               Novosti i saveti iz sveta{' '}
-              <span className="text-amber-800">adaptacija</span>
+              <span className="text-amber-200">adaptacija</span>
             </h2>
           </motion.div>
 
@@ -62,7 +62,7 @@ export default function ContactSection() {
                 viewport={{ once: true }}
                 className="group cursor-pointer"
               >
-                <div className="bg-white/90 rounded-2xl overflow-hidden hover:bg-white transition-all duration-300 shadow-xl">
+                <div className="bg-white/95 rounded-3xl overflow-hidden hover:bg-white transition-all duration-300 shadow-2xl">
                   <div className="aspect-video overflow-hidden">
                     <img
                       src={article.image}
@@ -71,11 +71,11 @@ export default function ContactSection() {
                     />
                   </div>
                   <div className="p-6">
-                    <span className="text-amber-800 text-sm font-medium">{article.date}</span>
+                    <span className="text-amber-700 text-sm font-medium">{article.date}</span>
                     <h3 className="text-xl font-semibold text-stone-900 mt-2 group-hover:text-amber-800 transition-colors">
                       {article.title}
                     </h3>
-                    <button className="flex items-center gap-2 text-stone-600 mt-4 group-hover:text-amber-800 transition-colors">
+                    <button className="flex items-center gap-2 text-stone-600 mt-4 group-hover:text-amber-700 transition-colors">
                       Pročitaj više <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -87,7 +87,7 @@ export default function ContactSection() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 relative overflow-hidden" style={{ backgroundColor: '#EDDA74' }}>
+      <section className="py-24 bg-stone-50 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-amber-50/50 to-transparent" />
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -142,7 +142,7 @@ export default function ContactSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="bg-stone-50 rounded-2xl p-8 shadow-xl border border-stone-200">
+              <div className="bg-white rounded-3xl p-8 shadow-2xl border border-stone-200">
                 <h3 className="text-2xl font-bold text-slate-800 mb-6">Pošaljite upit</h3>
                 <form className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">

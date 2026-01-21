@@ -46,7 +46,7 @@ export default function FAQSection() {
                 <div
                   key={idx}
                   className={`rounded-xl border-2 transition-all duration-300 ${
-                    openIndex === idx ? 'border-amber-500 bg-amber-50/50' : 'border-stone-200 bg-stone-50'
+                    openIndex === idx ? 'border-amber-500 bg-amber-50' : 'border-stone-200 bg-white'
                   }`}
                 >
                   <button

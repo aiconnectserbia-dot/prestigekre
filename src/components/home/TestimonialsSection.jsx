@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
   const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="py-24 relative overflow-hidden" style={{ backgroundColor: '#EDDA74' }}>
+    <section className="py-24 bg-gradient-to-br from-amber-700 to-amber-900 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 left-10 w-40 h-40 border border-amber-500/20 rounded-full" />
@@ -53,26 +53,26 @@ export default function TestimonialsSection() {
               <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
                 <div className="w-3 h-3 rounded-full bg-amber-500" />
               </div>
-              <span className="text-amber-800 font-semibold tracking-wide uppercase text-sm">
+              <span className="text-amber-200 font-semibold tracking-wide uppercase text-sm">
                 Utisci i preporuke
               </span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
               Šta zadovoljni klijenti{' '}
-              <span className="text-amber-800">kažu o nama.</span>
+              <span className="text-amber-200">kažu o nama.</span>
             </h2>
 
             <div className="flex gap-4 pt-4">
               <button
                 onClick={prev}
-                className="w-14 h-14 rounded-full border-2 border-amber-800 flex items-center justify-center text-amber-900 hover:bg-amber-800 hover:text-white transition-all"
+                className="w-14 h-14 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white hover:text-amber-900 transition-all"
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
               <button
                 onClick={next}
-                className="w-14 h-14 rounded-full border-2 border-amber-800 flex items-center justify-center text-amber-900 hover:bg-amber-800 hover:text-white transition-all"
+                className="w-14 h-14 rounded-full border-2 border-white/50 flex items-center justify-center text-white hover:bg-white hover:text-amber-900 transition-all"
               >
                 <ChevronRight className="w-6 h-6" />
               </button>
@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.4 }}
-                className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 relative shadow-xl"
+                className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 relative shadow-2xl"
               >
                 {/* Quote icon */}
                 <div className="absolute -top-6 -left-6 w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center shadow-lg">
@@ -136,7 +136,7 @@ export default function TestimonialsSection() {
                   key={idx}
                   onClick={() => setCurrent(idx)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    idx === current ? 'bg-amber-800 w-6' : 'bg-stone-400'
+                    idx === current ? 'bg-white w-6' : 'bg-white/40'
                   }`}
                 />
               ))}

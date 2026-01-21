@@ -25,9 +25,9 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#EDDA74' }}>
+    <div className="min-h-screen bg-stone-50">
       {/* Top bar */}
-      <div className="bg-amber-900 text-amber-100 py-2 text-xs hidden lg:block">
+      <div className="bg-amber-800 text-amber-50 py-2 text-xs hidden lg:block">
         <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
@@ -49,7 +49,7 @@ export default function Layout({ children }) {
       </div>
 
       {/* Main Navigation */}
-      <header className="sticky top-0 z-50 shadow-md border-b border-amber-900/10" style={{ backgroundColor: '#EDDA74' }}>
+      <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-stone-200">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}

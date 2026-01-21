@@ -12,7 +12,7 @@ const brands = [
 
 export default function BrandsSection() {
   return (
-    <section className="py-16 relative overflow-hidden" style={{ backgroundColor: '#EDDA74' }}>
+    <section className="py-16 bg-gradient-to-r from-amber-700 to-amber-800 relative overflow-hidden">
       {/* Decorative pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full" 
@@ -28,9 +28,9 @@ export default function BrandsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-2xl lg:text-3xl font-bold text-stone-900">
+          <h2 className="text-2xl lg:text-3xl font-bold text-white">
             Koristimo proizvode{' '}
-            <span className="text-amber-800">renomiranih brendova</span>
+            <span className="text-amber-200">renomiranih brendova</span>
           </h2>
         </motion.div>
 
@@ -52,12 +52,12 @@ export default function BrandsSection() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="bg-white/80 hover:bg-white rounded-xl px-8 py-6 transition-all duration-300 hover:scale-105 cursor-pointer shadow-md">
+                <div className="bg-white/95 hover:bg-white rounded-xl px-8 py-6 transition-all duration-300 hover:scale-105 cursor-pointer shadow-lg">
                   <div className="flex items-center gap-3">
                     <div className={`w-10 h-10 ${brand.color} rounded-lg flex items-center justify-center`}>
                       <span className="text-white font-bold text-lg">{brand.name[0]}</span>
                     </div>
-                    <span className="text-stone-800 font-semibold text-lg group-hover:text-amber-900 transition-colors">
+                    <span className="text-stone-800 font-semibold text-lg group-hover:text-amber-800 transition-colors">
                       {brand.name}
                     </span>
                   </div>
