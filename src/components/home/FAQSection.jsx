@@ -5,7 +5,7 @@ import { ChevronDown, CheckCircle } from 'lucide-react';
 const faqs = [
   {
     question: "Koliko traje kompletna adaptacija stana i da li radite sve radove ili moram da tražim dodatne majstore?",
-    answer: "Vreme trajanja adaptacije zavisi od veličine stana i obima radova, ali prosečan stan od 60–80 m² završavamo za 15 do 25 radnih dana. TvojDemo radi kompletne adaptacije „ključ u ruke", što znači da vi imate samo jedan kontakt, a mi organizujemo sve – od rušenja, gipsa, krečenja, pločica i parketa, do grejanja i vodovoda."
+    answer: "Vreme trajanja adaptacije zavisi od veličine stana i obima radova, ali prosečan stan od 60-80 m² završavamo za 15 do 25 radnih dana. TvojDemo radi kompletne adaptacije 'ključ u ruke', što znači da vi imate samo jedan kontakt, a mi organizujemo sve - od rušenja, gipsa, krečenja, pločica i parketa, do grejanja i vodovoda."
   },
   {
     question: "Da li krečenje i molerski radovi uključuju i zaštitu nameštaja i čišćenje nakon izvođenja radova?",
