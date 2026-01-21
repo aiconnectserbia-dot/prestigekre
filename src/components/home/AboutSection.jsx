@@ -10,9 +10,7 @@ const stats = [
 
 export default function AboutSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-amber-50/50 to-transparent" />
+    <section className="py-24 bg-stone-100 relative overflow-hidden">
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -51,43 +49,41 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 bg-white p-10 rounded-2xl shadow-xl"
           >
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-                <div className="w-3 h-3 rounded-full bg-amber-500" />
-              </div>
-              <span className="text-amber-600 font-semibold tracking-wide uppercase text-sm">
+              <div className="w-12 h-[2px] bg-amber-800" />
+              <span className="text-amber-800 font-semibold tracking-wide uppercase text-xs">
                 Dobrodošli u TvojDemo
               </span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
               Majstori za molerske radove i{' '}
-              <span className="text-amber-500">dekorativne tehnike.</span>
+              <span className="text-amber-800">dekorativne tehnike.</span>
             </h2>
 
-            <p className="text-slate-600 text-lg leading-relaxed">
+            <p className="text-stone-600 text-base leading-relaxed">
               TvojDemo je tim iskusnih majstora posvećenih kvalitetnoj i preciznoj završnoj obradi enterijera. 
               Naša specijalnost su molerski radovi i vrhunske dekorativne tehnike kao što su Travertino, 
               Marmorino, Velvet, Otocento, Špatulat i druge. Bilo da želite jednostavno osveženje ili 
               sofisticiranu dekoraciju zidova, garantujemo besprekorne rezultate.
             </p>
 
-            <p className="text-slate-600 leading-relaxed">
+            <p className="text-stone-600 leading-relaxed">
               Koristimo isključivo proverene materijale renomiranih brendova i pristupamo svakom projektu 
               sa istom pažnjom – kao da radimo u svom domu. Bez obzira na veličinu projekta – svakom poslu 
               pristupamo pedantno, profesionalno i u dogovorenom roku.
             </p>
 
-            <div className="bg-slate-800 rounded-2xl p-6 mt-8">
+            <div className="bg-amber-50 rounded-xl p-6 mt-8 border border-amber-100">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-6 h-6 text-amber-500" />
+                <div className="w-12 h-12 rounded-full bg-amber-800 flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold text-lg mb-1">Prepoznat kvalitet</h4>
-                  <p className="text-slate-400">
+                  <h4 className="text-stone-900 font-semibold text-lg mb-1">Prepoznat kvalitet</h4>
+                  <p className="text-stone-600">
                     Kada je u pitanju završna obrada prostora, kvalitet se ne može sakriti – 
                     on se vidi, oseti i traje godinama.
                   </p>
@@ -99,11 +95,11 @@ export default function AboutSection() {
             <div className="grid grid-cols-3 gap-6 pt-6">
               {stats.map((stat, idx) => (
                 <div key={idx} className="text-center">
-                  <div className="w-14 h-14 mx-auto rounded-xl bg-amber-500/10 flex items-center justify-center mb-3">
-                    <stat.icon className="w-7 h-7 text-amber-500" />
+                  <div className="w-14 h-14 mx-auto rounded-xl bg-amber-100 flex items-center justify-center mb-3">
+                    <stat.icon className="w-7 h-7 text-amber-800" />
                   </div>
-                  <p className="text-2xl font-bold text-slate-800">{stat.value}</p>
-                  <p className="text-sm text-slate-500">{stat.label}</p>
+                  <p className="text-2xl font-bold text-stone-900">{stat.value}</p>
+                  <p className="text-sm text-stone-600">{stat.label}</p>
                 </div>
               ))}
             </div>
