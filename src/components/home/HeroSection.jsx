@@ -49,7 +49,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="bg-white p-10 rounded-2xl shadow-xl"
+              className="bg-stone-50 p-10 rounded-2xl shadow-xl"
             >
               <motion.div 
                 initial={{ opacity: 0 }}
@@ -144,7 +144,7 @@ export default function HeroSection() {
                 className="relative h-full"
               >
                 {/* Main large image */}
-                <div className="absolute top-0 right-0 w-[450px] h-[500px] rounded-2xl overflow-hidden shadow-xl z-10 group border-8 border-white">
+                <div className="absolute top-0 right-0 w-[450px] h-[500px] rounded-2xl overflow-hidden shadow-xl z-10 group border-8 border-stone-50">
                   <img
                     src={slides[currentSlide].image2}
                     alt="Enterijer"
@@ -158,7 +158,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Smaller accent image */}
-                <div className="absolute bottom-0 left-0 w-[280px] h-[320px] rounded-2xl overflow-hidden border-8 border-white shadow-xl z-20 group">
+                <div className="absolute bottom-0 left-0 w-[280px] h-[320px] rounded-2xl overflow-hidden border-8 border-stone-50 shadow-xl z-20 group">
                   <img
                     src={slides[currentSlide].image}
                     alt="Molerski radovi"
@@ -196,7 +196,7 @@ export default function HeroSection() {
               key={idx}
               onClick={() => setCurrentSlide(idx)}
               className={`h-2 rounded-full transition-all duration-300 ${
-                idx === currentSlide ? 'bg-amber-800 w-8' : 'bg-white w-2'
+                idx === currentSlide ? 'bg-amber-800 w-8' : 'bg-stone-50 w-2'
               }`}
             />
           ))}

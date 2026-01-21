@@ -25,7 +25,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+    <section className="py-24 bg-stone-100 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-20 left-1/4 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl" />
 

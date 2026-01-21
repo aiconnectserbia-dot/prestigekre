@@ -4,7 +4,7 @@ import { CheckCircle, GraduationCap, Palette, ShieldCheck } from 'lucide-react';
 
 export default function WhyUsSection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-slate-50 to-amber-50/30 relative overflow-hidden">
+    <section className="py-24 bg-stone-100 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 right-20 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-20 w-48 h-48 bg-slate-400/10 rounded-full blur-3xl" />
@@ -17,7 +17,7 @@ export default function WhyUsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 bg-stone-50 p-10 rounded-2xl shadow-xl"
           >
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">

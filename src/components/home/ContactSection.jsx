@@ -29,7 +29,7 @@ export default function ContactSection() {
   return (
     <>
       {/* Blog/News Section */}
-      <section className="py-24 bg-slate-800 relative overflow-hidden">
+      <section className="py-24 bg-amber-900 relative overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -87,7 +87,7 @@ export default function ContactSection() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+      <section className="py-24 bg-stone-100 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-amber-50/50 to-transparent" />
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -142,7 +142,7 @@ export default function ContactSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white rounded-2xl p-8 shadow-xl border border-slate-100">
+              <div className="bg-stone-50 rounded-2xl p-8 shadow-xl border border-stone-200">
                 <h3 className="text-2xl font-bold text-slate-800 mb-6">Pošaljite upit</h3>
                 <form className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">

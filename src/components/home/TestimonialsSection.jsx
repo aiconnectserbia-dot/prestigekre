@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
   const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="py-24 bg-slate-800 relative overflow-hidden">
+    <section className="py-24 bg-amber-900 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 left-10 w-40 h-40 border border-amber-500/20 rounded-full" />

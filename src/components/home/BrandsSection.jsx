@@ -12,7 +12,7 @@ const brands = [
 
 export default function BrandsSection() {
   return (
-    <section className="py-16 bg-slate-800 relative overflow-hidden">
+    <section className="py-16 bg-amber-900 relative overflow-hidden">
       {/* Decorative pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full" 

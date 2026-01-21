@@ -31,7 +31,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-24 bg-stone-100 relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Left - FAQ Accordion */}
@@ -46,7 +46,7 @@ export default function FAQSection() {
                 <div
                   key={idx}
                   className={`rounded-xl border-2 transition-all duration-300 ${
-                    openIndex === idx ? 'border-amber-500 bg-amber-50/50' : 'border-slate-200 bg-white'
+                    openIndex === idx ? 'border-amber-500 bg-amber-50/50' : 'border-stone-200 bg-stone-50'
                   }`}
                 >
                   <button

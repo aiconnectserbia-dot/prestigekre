@@ -37,7 +37,7 @@ const techniques = [
 
 export default function TechniquesSection() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-24 bg-stone-100 relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <motion.div
