@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.4 }}
-                className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-8 relative"
+                className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 relative shadow-xl"
               >
                 {/* Quote icon */}
                 <div className="absolute -top-6 -left-6 w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center shadow-lg">
