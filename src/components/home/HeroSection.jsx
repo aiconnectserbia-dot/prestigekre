@@ -32,15 +32,15 @@ export default function HeroSection() {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="relative min-h-screen bg-stone-100 overflow-hidden">
+    <section className="relative min-h-screen bg-stone-100 overflow-hidden w-full">
       {/* Subtle texture overlay */}
       <div className="absolute inset-0 opacity-30" style={{
         backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(120, 53, 15, 0.05) 1px, transparent 0)',
         backgroundSize: '40px 40px'
       }} />
 
-      <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+      <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[70vh] lg:min-h-[80vh]">
           {/* Left content */}
           <AnimatePresence mode="wait">
             <motion.div
@@ -49,7 +49,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="bg-white/95 backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-amber-100"
+              className="bg-white/95 backdrop-blur-sm p-6 lg:p-10 rounded-3xl shadow-2xl border border-amber-100"
             >
               <motion.div 
                 initial={{ opacity: 0 }}
@@ -70,7 +70,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 + idx * 0.1, duration: 0.6 }}
-                    className={`text-4xl md:text-5xl font-bold leading-tight ${
+                    className={`text-3xl md:text-4xl lg:text-5xl font-bold leading-tight ${
                       idx === 0 || idx === 2 ? 'text-stone-900' : 'text-amber-800'
                     }`}
                   >
@@ -92,16 +92,16 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
-                className="flex gap-4"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4"
               >
                 <Button 
-                  className="bg-amber-800 hover:bg-amber-900 text-white font-semibold px-8 py-6 text-base rounded-lg transition-all hover:shadow-lg"
+                  className="bg-amber-800 hover:bg-amber-900 text-white font-semibold px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base rounded-lg transition-all hover:shadow-lg"
                 >
                   Zakažite konsultaciju
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-2 border-stone-300 text-stone-700 hover:bg-stone-50 px-8 py-6 text-base rounded-lg transition-all"
+                  className="border-2 border-stone-300 text-stone-700 hover:bg-stone-50 px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base rounded-lg transition-all"
                 >
                   Galerija
                 </Button>
@@ -112,21 +112,21 @@ export default function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.1 }}
-                className="flex items-center gap-8 pt-8 mt-8 border-t border-stone-200"
+                className="flex items-center justify-between gap-4 sm:gap-8 pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-stone-200"
               >
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-amber-800">10+</p>
-                  <p className="text-stone-600 text-sm">Godina iskustva</p>
+                <div className="text-center flex-1">
+                  <p className="text-2xl sm:text-3xl font-bold text-amber-800">10+</p>
+                  <p className="text-stone-600 text-xs sm:text-sm">Godina</p>
                 </div>
-                <div className="w-px h-12 bg-stone-300"></div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-amber-800">200+</p>
-                  <p className="text-stone-600 text-sm">Projekata</p>
+                <div className="w-px h-10 sm:h-12 bg-stone-300"></div>
+                <div className="text-center flex-1">
+                  <p className="text-2xl sm:text-3xl font-bold text-amber-800">200+</p>
+                  <p className="text-stone-600 text-xs sm:text-sm">Projekata</p>
                 </div>
-                <div className="w-px h-12 bg-stone-300"></div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-amber-800">100%</p>
-                  <p className="text-stone-600 text-sm">Zadovoljstvo</p>
+                <div className="w-px h-10 sm:h-12 bg-stone-300"></div>
+                <div className="text-center flex-1">
+                  <p className="text-2xl sm:text-3xl font-bold text-amber-800">100%</p>
+                  <p className="text-stone-600 text-xs sm:text-sm">Zadovoljstvo</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -174,23 +174,23 @@ export default function HeroSection() {
         </div>
 
         {/* Navigation arrows */}
-        <div className="absolute bottom-8 left-8 flex gap-3">
+        <div className="absolute bottom-4 left-4 lg:bottom-8 lg:left-8 flex gap-2 lg:gap-3">
           <button
             onClick={prevSlide}
-            className="w-12 h-12 rounded-lg bg-stone-50 shadow-lg flex items-center justify-center text-stone-700 hover:bg-amber-800 hover:text-white transition-all duration-300"
+            className="w-10 h-10 lg:w-12 lg:h-12 rounded-lg bg-stone-50 shadow-lg flex items-center justify-center text-stone-700 hover:bg-amber-800 hover:text-white transition-all duration-300"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-4 h-4 lg:w-5 lg:h-5" />
           </button>
           <button
             onClick={nextSlide}
-            className="w-12 h-12 rounded-lg bg-stone-50 shadow-lg flex items-center justify-center text-stone-700 hover:bg-amber-800 hover:text-white transition-all duration-300"
+            className="w-10 h-10 lg:w-12 lg:h-12 rounded-lg bg-stone-50 shadow-lg flex items-center justify-center text-stone-700 hover:bg-amber-800 hover:text-white transition-all duration-300"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-4 h-4 lg:w-5 lg:h-5" />
           </button>
         </div>
 
         {/* Slide indicators */}
-        <div className="absolute bottom-8 right-8 flex gap-2">
+        <div className="absolute bottom-4 right-4 lg:bottom-8 lg:right-8 flex gap-2">
           {slides.map((_, idx) => (
             <button
               key={idx}

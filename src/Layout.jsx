@@ -25,7 +25,7 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-stone-50 overflow-x-hidden">
       {/* Top bar */}
       <div className="bg-amber-800 text-amber-50 py-2 text-xs hidden lg:block">
         <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
@@ -99,7 +99,7 @@ export default function Layout({ children }) {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`lg:hidden p-2 rounded-lg ${isScrolled ? 'text-slate-800' : 'text-white'}`}
+              className="lg:hidden p-2 rounded-lg text-stone-800"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>

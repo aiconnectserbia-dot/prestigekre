@@ -4,20 +4,20 @@ import { CheckCircle, GraduationCap, Palette, ShieldCheck } from 'lucide-react';
 
 export default function WhyUsSection() {
   return (
-    <section className="py-24 bg-stone-100 relative overflow-hidden">
+    <section className="py-12 lg:py-24 bg-stone-100 relative overflow-hidden w-full">
       {/* Decorative elements */}
       <div className="absolute top-20 right-20 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-20 w-48 h-48 bg-slate-400/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6 bg-white p-10 rounded-3xl shadow-xl border border-stone-200"
+            className="space-y-4 lg:space-y-6 bg-white p-6 lg:p-10 rounded-3xl shadow-xl border border-stone-200"
           >
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
@@ -28,7 +28,7 @@ export default function WhyUsSection() {
               </span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 leading-tight">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-800 leading-tight">
               Kada iskustvo pravi{' '}
               <span className="text-amber-500">razliku.</span>
             </h2>
@@ -86,25 +86,25 @@ export default function WhyUsSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative">
+            <div className="relative mx-auto max-w-lg lg:max-w-none">
               <img
                 src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80"
                 alt="Moler na poslu"
-                className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
+                className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl"
               />
               
               {/* Floating card */}
-              <div className="absolute -bottom-8 -left-8 bg-white rounded-2xl p-6 shadow-xl max-w-xs">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-full bg-amber-500 flex items-center justify-center">
-                    <CheckCircle className="w-8 h-8 text-white" />
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:-left-8 bg-white rounded-2xl p-4 sm:p-6 shadow-xl max-w-[200px] sm:max-w-xs">
+                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-slate-800">100%</p>
-                    <p className="text-slate-500">Zadovoljstvo</p>
+                    <p className="text-2xl sm:text-3xl font-bold text-slate-800">100%</p>
+                    <p className="text-xs sm:text-sm text-slate-500">Zadovoljstvo</p>
                   </div>
                 </div>
-                <p className="text-slate-600 text-sm">
+                <p className="text-slate-600 text-xs sm:text-sm">
                   Svi naši klijenti su zadovoljni kvalitetom izvršenih radova
                 </p>
               </div>
