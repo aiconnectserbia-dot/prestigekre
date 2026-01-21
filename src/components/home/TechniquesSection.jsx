@@ -45,7 +45,7 @@ export default function TechniquesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 lg:mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
@@ -69,7 +69,7 @@ export default function TechniquesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+              className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 flex-shrink-0 w-[280px] md:w-auto snap-center"
             >
               <div className="aspect-[4/5] overflow-hidden">
                 <img
