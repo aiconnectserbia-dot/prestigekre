@@ -61,7 +61,7 @@ export default function Layout({ children }) {
               />
               <div>
                 <span className="font-bold text-xl tracking-tight text-stone-900">
-                  PRESTIGEKREČ
+                  PRESTIGE KREČ
                 </span>
                 <p className="text-xs text-stone-600">
                   Gletovanje • Krečenje • Gipsarski radovi
@@ -150,7 +150,7 @@ export default function Layout({ children }) {
                   className="w-14 h-14 object-contain"
                 />
                 <div>
-                  <span className="font-bold text-xl text-white">PRESTIGEKREČ</span>
+                  <span className="font-bold text-xl text-white">PRESTIGE KREČ</span>
                   <p className="text-xs text-slate-400">Gletovanje • Krečenje • Gipsarski radovi</p>
                 </div>
               </div>
@@ -224,7 +224,7 @@ export default function Layout({ children }) {
         <div className="border-t border-slate-800">
           <div className="container mx-auto px-4 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-sm">
-              © 2024 PRESTIGEKREČ. Sva prava zadržana.
+              © 2024 PRESTIGE KREČ. Sva prava zadržana.
             </p>
             <p className="text-slate-500 text-sm">
               Dizajn i razvoj

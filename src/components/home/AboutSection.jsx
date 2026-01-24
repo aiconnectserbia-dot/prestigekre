@@ -58,7 +58,7 @@ export default function AboutSection() {
                 className="w-10 h-10 object-contain"
               />
               <span className="text-amber-800 font-semibold tracking-wide uppercase text-xs">
-                Dobrodošli u PRESTIGEKREČ
+                Dobrodošli u PRESTIGE KREČ
               </span>
             </div>
 

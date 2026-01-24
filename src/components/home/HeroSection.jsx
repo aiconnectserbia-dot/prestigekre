@@ -65,7 +65,7 @@ export default function HeroSection() {
               transition={{ delay: 0.5 }}
               className="text-stone-600 text-lg lg:text-xl leading-relaxed max-w-xl"
             >
-              PRESTIGEKREČ - Vaš pouzdan partner za vrhunske usluge gletovanja, krečenja i gipsarskih radova. 
+              PRESTIGE KREČ - Vaš pouzdan partner za vrhunske usluge gletovanja, krečenja i gipsarskih radova. 
               Sa preko decenije iskustva, garantujemo besprekorne rezultate.
             </motion.p>
 
