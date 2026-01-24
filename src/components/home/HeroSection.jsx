@@ -4,7 +4,7 @@ import { Phone, CheckCircle, Award, Users } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-amber-50 via-white to-amber-50/50 overflow-hidden w-full">
+    <section className="relative min-h-screen bg-gradient-to-br from-[#FFF8E7] via-[#FFFBF0] to-[#FFF8E7] overflow-hidden w-full">
       {/* Decorative elements */}
       <div className="absolute top-20 right-20 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-amber-300/10 rounded-full blur-3xl"></div>

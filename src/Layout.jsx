@@ -25,7 +25,7 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-amber-50/30 overflow-x-hidden">
+    <div className="min-h-screen bg-[#FFF8E7] overflow-x-hidden">
       {/* Top bar */}
       <div className="bg-amber-700 text-amber-50 py-2 text-xs hidden lg:block">
         <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">

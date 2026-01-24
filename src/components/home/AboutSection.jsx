@@ -10,7 +10,7 @@ const stats = [
 
 export default function AboutSection() {
   return (
-    <section className="py-12 lg:py-24 bg-gradient-to-br from-white via-amber-50/30 to-white relative overflow-hidden w-full">
+    <section className="py-12 lg:py-24 bg-[#FFF8E7] relative overflow-hidden w-full">
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
