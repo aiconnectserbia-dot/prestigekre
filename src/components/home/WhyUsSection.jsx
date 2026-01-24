@@ -4,7 +4,7 @@ import { CheckCircle, GraduationCap, Palette, ShieldCheck } from 'lucide-react';
 
 export default function WhyUsSection() {
   return (
-    <section className="py-12 lg:py-24 bg-[#EED9C4] relative overflow-hidden w-full">
+    <section className="py-12 lg:py-24 bg-[#DCC9B3] relative overflow-hidden w-full">
       {/* Decorative elements */}
       <div className="absolute top-20 right-20 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-20 w-48 h-48 bg-slate-400/10 rounded-full blur-3xl" />

@@ -10,7 +10,7 @@ const stats = [
 
 export default function AboutSection() {
   return (
-    <section className="py-12 lg:py-24 bg-[#EED9C4] relative overflow-hidden w-full">
+    <section className="py-12 lg:py-24 bg-[#DCC9B3] relative overflow-hidden w-full">
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">

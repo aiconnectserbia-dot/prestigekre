@@ -31,7 +31,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="py-24 bg-[#F5E6D3] relative overflow-hidden">
+    <section className="py-24 bg-[#E8D5C4] relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Left - FAQ Accordion */}
