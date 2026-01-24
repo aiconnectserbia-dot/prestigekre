@@ -7,8 +7,8 @@ import { MapPin, Phone, Mail, Clock, Send, ArrowRight } from 'lucide-react';
 
 const contactInfo = [
   { icon: MapPin, label: 'Adresa', value: 'Beograd, Srbija' },
-  { icon: Phone, label: 'Telefon', value: '+381 63 123 4567' },
-  { icon: Mail, label: 'Email', value: 'info@tvojdemo.rs' },
+  { icon: Phone, label: 'Telefon', value: '+381 63 242 849' },
+  { icon: Mail, label: 'Email', value: 'joksimovicboro@gmail.com' },
   { icon: Clock, label: 'Radno vreme', value: 'Pon - Sub: 08:00 - 18:00' },
 ];
 
