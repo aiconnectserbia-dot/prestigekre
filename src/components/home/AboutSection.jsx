@@ -52,9 +52,13 @@ export default function AboutSection() {
             className="space-y-4 lg:space-y-6 bg-white p-6 lg:p-10 rounded-3xl shadow-xl border border-stone-200"
           >
             <div className="flex items-center gap-3">
-              <div className="w-12 h-[2px] bg-amber-800" />
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
+                alt="PrestigeKreč Logo"
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-amber-800 font-semibold tracking-wide uppercase text-xs">
-                Dobrodošli u TvojDemo
+                Dobrodošli u PRESTIGEKREČ
               </span>
             </div>
 
@@ -64,8 +68,8 @@ export default function AboutSection() {
             </h2>
 
             <p className="text-stone-600 text-base leading-relaxed">
-              TvojDemo je tim iskusnih majstora posvećenih kvalitetnoj i preciznoj završnoj obradi enterijera. 
-              Naša specijalnost su molerski radovi i vrhunske dekorativne tehnike kao što su Travertino, 
+              PRESTIGEKREČ je tim iskusnih majstora posvećenih kvalitetnoj i preciznoj završnoj obradi enterijera. 
+              Naša specijalnost su gletovanje, krečenje, gipsarski radovi i vrhunske dekorativne tehnike kao što su Travertino, 
               Marmorino, Velvet, Otocento, Špatulat i druge. Bilo da želite jednostavno osveženje ili 
               sofisticiranu dekoraciju zidova, garantujemo besprekorne rezultate.
             </p>

@@ -54,21 +54,17 @@ export default function Layout({ children }) {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-3 group">
-              <div className="relative">
-                <svg className="w-10 h-10 text-amber-800 group-hover:text-amber-900 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="4" y="4" width="7" height="7" strokeLinecap="round" strokeLinejoin="round"/>
-                  <rect x="13" y="4" width="7" height="7" strokeLinecap="round" strokeLinejoin="round"/>
-                  <rect x="4" y="13" width="7" height="7" strokeLinecap="round" strokeLinejoin="round"/>
-                  <rect x="13" y="13" width="7" height="7" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M4 4L20 20M20 4L4 20" strokeLinecap="round" opacity="0.3"/>
-                </svg>
-              </div>
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
+                alt="PrestigeKreč Logo"
+                className="w-12 h-12 object-contain transition-transform group-hover:scale-105"
+              />
               <div>
                 <span className="font-bold text-xl tracking-tight text-stone-900">
-                  TvojDemo
+                  PRESTIGEKREČ
                 </span>
                 <p className="text-xs text-stone-600">
-                  Završni radovi
+                  Gletovanje • Krečenje • Gipsarski radovi
                 </p>
               </div>
             </Link>
@@ -148,12 +144,14 @@ export default function Layout({ children }) {
             {/* Company info */}
             <div className="space-y-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
-                  <span className="text-slate-900 font-bold text-xl">TD</span>
-                </div>
+                <img 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
+                  alt="PrestigeKreč Logo"
+                  className="w-14 h-14 object-contain"
+                />
                 <div>
-                  <span className="font-bold text-xl text-white">TvojDemo</span>
-                  <p className="text-xs text-slate-400">Završni radovi</p>
+                  <span className="font-bold text-xl text-white">PRESTIGEKREČ</span>
+                  <p className="text-xs text-slate-400">Gletovanje • Krečenje • Gipsarski radovi</p>
                 </div>
               </div>
               <p className="text-slate-400 leading-relaxed">
@@ -215,7 +213,7 @@ export default function Layout({ children }) {
                 </li>
                 <li className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-400">info@tvojdemo.rs</span>
+                  <span className="text-slate-400">info@prestigekrec.rs</span>
                 </li>
               </ul>
             </div>
@@ -226,7 +224,7 @@ export default function Layout({ children }) {
         <div className="border-t border-slate-800">
           <div className="container mx-auto px-4 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-sm">
-              © 2024 TvojDemo. Sva prava zadržana. | Demo verzija
+              © 2024 PRESTIGEKREČ. Sva prava zadržana.
             </p>
             <p className="text-slate-500 text-sm">
               Dizajn i razvoj
