@@ -27,27 +27,25 @@ export default function Layout({ children }) {
   return (
     <div className="min-h-screen bg-[#F5F1E8] overflow-x-hidden">
       {/* Top bar */}
-      <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-stone-900 text-stone-200 py-2.5 text-sm hidden lg:block">
-        <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">
-          <div className="flex items-center gap-8">
-            <span className="flex items-center gap-2 text-stone-300">
-              <MapPin className="w-4 h-4 text-amber-400" />
-              Beograd, Srbija
-            </span>
-            <a href="mailto:joksimovicboro@gmail.com" className="flex items-center gap-2 text-stone-300 hover:text-amber-400 transition-colors">
-              <Mail className="w-4 h-4 text-amber-400" />
-              joksimovicboro@gmail.com
-            </a>
-          </div>
-          <a href="tel:+38163242849" className="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors font-semibold">
-            <Phone className="w-4 h-4" />
+      <div className="bg-stone-800 text-stone-200 py-3 text-sm hidden lg:block">
+        <div className="container mx-auto px-4 lg:px-8 flex items-center gap-8">
+          <span className="flex items-center gap-2">
+            <MapPin className="w-4 h-4 text-amber-500" />
+            Beograd, Srbija
+          </span>
+          <span className="flex items-center gap-2">
+            <Mail className="w-4 h-4 text-amber-500" />
+            joksimovicboro@gmail.com
+          </span>
+          <a href="tel:+38163242849" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
+            <Phone className="w-4 h-4 text-amber-500" />
             +381 63 242 849
           </a>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-stone-200">
+      <header className="sticky top-0 z-50 bg-white shadow-md">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -55,28 +53,27 @@ export default function Layout({ children }) {
               <img 
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
                 alt="PrestigeKreč Logo"
-                className="w-16 h-16 object-contain transition-transform group-hover:scale-110"
+                className="w-14 h-14 object-contain transition-transform group-hover:scale-105"
               />
               <div>
-                <span className="font-bold text-2xl tracking-tight text-stone-900 group-hover:text-amber-600 transition-colors">
+                <span className="font-bold text-2xl tracking-tight text-stone-900">
                   PRESTIGE KREČ
                 </span>
                 <p className="text-xs text-stone-600">
-                  Profesionalni moleraj
+                  Gletovanje • Krečenje • Gipsarski radovi
                 </p>
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-10">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
                   to={createPageUrl(link.page)}
-                  className="text-stone-700 hover:text-amber-600 font-semibold text-base transition-colors relative group py-2"
+                  className="text-stone-700 hover:text-amber-600 font-medium text-base transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-600 after:transition-all hover:after:w-full"
                 >
                   {link.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-600 group-hover:w-full transition-all duration-300"></span>
                 </Link>
               ))}
             </nav>
@@ -85,9 +82,8 @@ export default function Layout({ children }) {
             <div className="hidden lg:flex items-center gap-4">
               <a
                 href="tel:+38163242849"
-                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold px-8 py-3.5 rounded-full transition-all hover:shadow-2xl hover:scale-105 text-base flex items-center gap-2"
+                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full transition-all hover:shadow-xl text-base"
               >
-                <Phone className="w-4 h-4" />
                 Kontaktirajte
               </a>
             </div>
@@ -95,7 +91,7 @@ export default function Layout({ children }) {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-stone-800 hover:bg-stone-100 transition-colors"
+              className="lg:hidden p-2 rounded-lg text-stone-800"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
