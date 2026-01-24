@@ -36,7 +36,7 @@ export default function Layout({ children }) {
             </span>
             <span className="flex items-center gap-2">
               <Mail className="w-3 h-3" />
-              info@tvojdemo.rs
+              info@prestigekrec.rs
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -155,8 +155,8 @@ export default function Layout({ children }) {
                 </div>
               </div>
               <p className="text-slate-400 leading-relaxed">
-                Tim iskusnih majstora posvećenih kvalitetnoj završnoj obradi enterijera. 
-                Specijalizovani za molerske radove i dekorativne tehnike.
+                Vaš pouzdan partner za vrhunske molerske i gipsarske radove. 
+                Specijalizovani za gletovanje, krečenje i dekorativne tehnike.
               </p>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all">
