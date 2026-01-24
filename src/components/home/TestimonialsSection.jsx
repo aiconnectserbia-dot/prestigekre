@@ -5,19 +5,19 @@ import { Quote, ChevronLeft, ChevronRight, Star } from 'lucide-react';
 const testimonials = [
   {
     text: "Radili su kompletno krečenje i gletovanje lokala - sve je bilo besprekorno! Došli su tačno u dogovoreno vreme, završili pre roka, i iza sebe ostavili čisto kao da nisu ni bili. Sve preporuke!",
-    author: "Fortuna d.o.o.",
+    author: "Milan Petrović",
     service: "Krečenje i gletovanje",
     rating: 5,
   },
   {
     text: "Ekipa je renovirala moj salon i rezultat je prevazišao moja očekivanja. Profesionalni, detaljni, sve su radili kao da rade za sebe. Svaka čast majstorima i ekipi!",
-    author: "Salon za negu lepote",
+    author: "Ana Jovanović",
     service: "Adaptacija salona",
     rating: 5,
   },
   {
     text: "Uradili su Travertino tehniku u mojoj dnevnoj sobi. Izgleda fenomenalno, pravo umetničko delo! Preporučujem svima koji žele nešto posebno za svoj dom.",
-    author: "Marija P.",
+    author: "Marija Nikolić",
     service: "Dekorativne tehnike",
     rating: 5,
   },
@@ -30,13 +30,13 @@ export default function TestimonialsSection() {
   const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="py-24 bg-gradient-to-br from-amber-700 to-amber-900 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-stone-700 via-stone-800 to-stone-900 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 left-10 w-40 h-40 border border-amber-500/20 rounded-full" />
         <div className="absolute bottom-10 right-10 w-60 h-60 border border-amber-500/10 rounded-full" />
-        <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-amber-500/30 rounded-full" />
-        <div className="absolute top-1/3 right-1/3 w-6 h-6 bg-amber-500/20 rounded-full" />
+        <div className="absolute top-20 right-20 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
