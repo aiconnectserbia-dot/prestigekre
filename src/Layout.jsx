@@ -25,9 +25,9 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-stone-50 overflow-x-hidden">
+    <div className="min-h-screen bg-amber-50/30 overflow-x-hidden">
       {/* Top bar */}
-      <div className="bg-amber-800 text-amber-50 py-2 text-xs hidden lg:block">
+      <div className="bg-amber-700 text-amber-50 py-2 text-xs hidden lg:block">
         <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
@@ -36,13 +36,13 @@ export default function Layout({ children }) {
             </span>
             <span className="flex items-center gap-2">
               <Mail className="w-3 h-3" />
-              info@prestigekrec.rs
+              joksimovicboro@gmail.com
             </span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:+381631234567" className="flex items-center gap-2 hover:text-white transition-colors">
+            <a href="tel:+38163242849" className="flex items-center gap-2 hover:text-white transition-colors">
               <Phone className="w-3 h-3" />
-              +381 63 123 4567
+              +381 63 242 849
             </a>
           </div>
         </div>
@@ -85,10 +85,10 @@ export default function Layout({ children }) {
             {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:+381631234567"
-                className="bg-amber-800 hover:bg-amber-900 text-white font-medium px-6 py-2.5 rounded-lg transition-all hover:shadow-lg text-sm"
+                href="tel:+38163242849"
+                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2.5 rounded-lg transition-all hover:shadow-lg text-sm"
               >
-                Kontaktirajte nas
+                Pozovite nas
               </a>
             </div>
 
@@ -123,7 +123,7 @@ export default function Layout({ children }) {
                   </Link>
                 ))}
                 <a
-                  href="tel:+381631234567"
+                  href="tel:+38163242849"
                   className="block bg-amber-500 text-slate-900 font-semibold px-6 py-3 rounded-full text-center"
                 >
                   Pozovite nas
@@ -209,11 +209,11 @@ export default function Layout({ children }) {
                 </li>
                 <li className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-400">+381 63 123 4567</span>
+                  <span className="text-slate-400">+381 63 242 849</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Mail className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-400">info@prestigekrec.rs</span>
+                  <span className="text-slate-400">joksimovicboro@gmail.com</span>
                 </li>
               </ul>
             </div>
