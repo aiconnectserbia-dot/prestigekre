@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=1920&q=80"
           alt="Background"
           className="w-full h-full object-cover"
         />
