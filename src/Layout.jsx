@@ -27,22 +27,31 @@ export default function Layout({ children }) {
   return (
     <div className="min-h-screen bg-[#F5F1E8] overflow-x-hidden">
       {/* Top bar */}
-      <div className="bg-amber-700 text-amber-50 py-2 text-xs hidden lg:block">
+      <div className="bg-stone-800 text-stone-200 py-2.5 text-xs hidden lg:block">
         <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
-              <MapPin className="w-3 h-3" />
+              <MapPin className="w-3.5 h-3.5" />
               Beograd, Srbija
             </span>
             <span className="flex items-center gap-2">
-              <Mail className="w-3 h-3" />
+              <Mail className="w-3.5 h-3.5" />
               joksimovicboro@gmail.com
             </span>
-          </div>
-          <div className="flex items-center gap-4">
-            <a href="tel:+38163242849" className="flex items-center gap-2 hover:text-white transition-colors">
-              <Phone className="w-3 h-3" />
+            <a href="tel:+38163242849" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
+              <Phone className="w-3.5 h-3.5" />
               +381 63 242 849
+            </a>
+          </div>
+          <div className="flex items-center gap-3">
+            <a href="#" className="w-7 h-7 rounded-full bg-stone-700 flex items-center justify-center hover:bg-amber-600 transition-all">
+              <Facebook className="w-3.5 h-3.5" />
+            </a>
+            <a href="#" className="w-7 h-7 rounded-full bg-stone-700 flex items-center justify-center hover:bg-amber-600 transition-all">
+              <Instagram className="w-3.5 h-3.5" />
+            </a>
+            <a href="#" className="w-7 h-7 rounded-full bg-stone-700 flex items-center justify-center hover:bg-amber-600 transition-all">
+              <Linkedin className="w-3.5 h-3.5" />
             </a>
           </div>
         </div>
