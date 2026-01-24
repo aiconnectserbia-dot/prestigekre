@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background image for desktop */}
       <div className="hidden lg:block absolute inset-0 z-0">
         <img
-          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/0e5835e3f_SaleFashionBrandWebsiteHomepageBanner.jpg"
+          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/66359383c_SaleFashionBrandWebsiteHomepageBanner.jpg"
           alt="Background"
           className="w-full h-full object-cover"
         />
