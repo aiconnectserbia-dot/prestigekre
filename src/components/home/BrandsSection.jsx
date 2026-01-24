@@ -1,24 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Paintbrush, Droplet, Sparkles, Award, CheckCircle, Star } from 'lucide-react';
 
 const brands = [
-  { name: 'Dulux', color: 'bg-blue-600' },
-  { name: 'Maxima', color: 'bg-red-600' },
-  { name: 'Zorka', color: 'bg-green-600' },
-  { name: 'Chromos', color: 'bg-orange-600' },
-  { name: 'JUB', color: 'bg-purple-600' },
-  { name: 'Caparol', color: 'bg-amber-600' },
+  { name: 'Dulux', icon: Paintbrush, gradient: 'from-blue-600 to-blue-400' },
+  { name: 'Maxima', icon: Droplet, gradient: 'from-red-600 to-red-400' },
+  { name: 'Zorka', icon: Sparkles, gradient: 'from-green-600 to-green-400' },
+  { name: 'Chromos', icon: Award, gradient: 'from-orange-600 to-orange-400' },
+  { name: 'JUB', icon: CheckCircle, gradient: 'from-purple-600 to-purple-400' },
+  { name: 'Caparol', icon: Star, gradient: 'from-amber-600 to-amber-400' },
 ];
 
 export default function BrandsSection() {
   return (
-    <section className="py-16 bg-gradient-to-r from-amber-700 to-amber-800 relative overflow-hidden">
-      {/* Decorative pattern */}
-      <div className="absolute inset-0 opacity-5">
+    <section className="py-20 bg-gradient-to-br from-stone-800 via-stone-900 to-stone-800 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full" 
           style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} 
         />
       </div>
+      <div className="absolute top-10 right-10 w-64 h-64 bg-amber-600/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <motion.div
@@ -26,46 +29,69 @@ export default function BrandsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-2xl lg:text-3xl font-bold text-white">
-            Koristimo proizvode{' '}
-            <span className="text-amber-200">renomiranih brendova</span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center">
+              <div className="w-4 h-4 rounded-full bg-amber-500" />
+            </div>
+            <span className="text-amber-400 font-semibold tracking-wide uppercase text-sm">
+              Naši partneri
+            </span>
+          </div>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-3">
+            Radimo sa najboljim{' '}
+            <span className="text-amber-400">svetskim brendovima</span>
           </h2>
+          <p className="text-stone-300 text-lg max-w-2xl mx-auto">
+            Koristimo isključivo proverene i kvalitetne materijale renomiranih proizvođača
+          </p>
         </motion.div>
 
-        {/* Brands marquee */}
-        <div className="relative overflow-hidden">
-          <motion.div 
-            className="flex gap-12 items-center justify-center flex-wrap"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            {brands.map((brand, idx) => (
-              <motion.div
-                key={brand.name}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: idx * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <div className="bg-white/95 hover:bg-white rounded-xl px-8 py-6 transition-all duration-300 hover:scale-105 cursor-pointer shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className={`w-10 h-10 ${brand.color} rounded-lg flex items-center justify-center`}>
-                      <span className="text-white font-bold text-lg">{brand.name[0]}</span>
-                    </div>
-                    <span className="text-stone-800 font-semibold text-lg group-hover:text-amber-800 transition-colors">
+        {/* Brands grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+          {brands.map((brand, idx) => (
+            <motion.div
+              key={brand.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              viewport={{ once: true }}
+              className="group relative"
+            >
+              <div className="relative bg-gradient-to-br from-stone-700/50 to-stone-800/50 backdrop-blur-sm rounded-2xl p-6 border border-stone-600/30 hover:border-amber-500/50 transition-all duration-300 hover:scale-105 cursor-pointer overflow-hidden">
+                {/* Glow effect on hover */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${brand.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
+                
+                <div className="relative flex flex-col items-center gap-4">
+                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${brand.gradient} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow`}>
+                    <brand.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="text-center">
+                    <span className="text-white font-bold text-lg group-hover:text-amber-400 transition-colors">
                       {brand.name}
                     </span>
+                    <div className="w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent transition-all duration-300 mt-1" />
                   </div>
                 </div>
-              </motion.div>
-            ))}
-          </motion.div>
+              </div>
+            </motion.div>
+          ))}
         </div>
+
+        {/* Bottom badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
+          <div className="inline-flex items-center gap-3 bg-amber-500/10 border border-amber-500/30 rounded-full px-6 py-3">
+            <CheckCircle className="w-5 h-5 text-amber-400" />
+            <span className="text-amber-100 font-medium">Svi materijali su visokokvalitetni i sertifikovani</span>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
