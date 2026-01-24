@@ -138,7 +138,7 @@ export default function Layout({ children }) {
       <main>{children}</main>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-300">
+      <footer className="bg-gradient-to-br from-stone-800 to-stone-900 text-slate-300">
         <div className="container mx-auto px-4 lg:px-8 py-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Company info */}
