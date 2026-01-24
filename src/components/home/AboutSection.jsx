@@ -68,7 +68,7 @@ export default function AboutSection() {
             </h2>
 
             <p className="text-stone-600 text-base leading-relaxed">
-              PRESTIGEKREČ je tim iskusnih majstora posvećenih kvalitetnoj i preciznoj završnoj obradi enterijera. 
+              PRESTIGE KREČ je tim iskusnih majstora posvećenih kvalitetnoj i preciznoj završnoj obradi enterijera. 
               Naša specijalnost su gletovanje, krečenje, gipsarski radovi i vrhunske dekorativne tehnike kao što su Travertino, 
               Marmorino, Velvet, Otocento, Špatulat i druge. Bilo da želite jednostavno osveženje ili 
               sofisticiranu dekoraciju zidova, garantujemo besprekorne rezultate.
