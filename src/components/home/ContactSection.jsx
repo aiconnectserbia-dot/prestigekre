@@ -29,7 +29,7 @@ export default function ContactSection() {
   return (
     <>
       {/* Blog/News Section */}
-      <section className="py-24 bg-gradient-to-br from-amber-600 to-amber-700 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-stone-700 via-stone-800 to-stone-900 relative overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
