@@ -27,49 +27,36 @@ export default function Layout({ children }) {
   return (
     <div className="min-h-screen bg-[#F5F1E8] overflow-x-hidden">
       {/* Top bar */}
-      <div className="bg-stone-800 text-stone-200 py-2.5 text-xs hidden lg:block">
-        <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <span className="flex items-center gap-2">
-              <MapPin className="w-3.5 h-3.5" />
-              Beograd, Srbija
-            </span>
-            <span className="flex items-center gap-2">
-              <Mail className="w-3.5 h-3.5" />
-              joksimovicboro@gmail.com
-            </span>
-            <a href="tel:+38163242849" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
-              <Phone className="w-3.5 h-3.5" />
-              +381 63 242 849
-            </a>
-          </div>
-          <div className="flex items-center gap-3">
-            <a href="#" className="w-7 h-7 rounded-full bg-stone-700 flex items-center justify-center hover:bg-amber-600 transition-all">
-              <Facebook className="w-3.5 h-3.5" />
-            </a>
-            <a href="#" className="w-7 h-7 rounded-full bg-stone-700 flex items-center justify-center hover:bg-amber-600 transition-all">
-              <Instagram className="w-3.5 h-3.5" />
-            </a>
-            <a href="#" className="w-7 h-7 rounded-full bg-stone-700 flex items-center justify-center hover:bg-amber-600 transition-all">
-              <Linkedin className="w-3.5 h-3.5" />
-            </a>
-          </div>
+      <div className="bg-stone-800 text-stone-200 py-3 text-sm hidden lg:block">
+        <div className="container mx-auto px-4 lg:px-8 flex items-center gap-8">
+          <span className="flex items-center gap-2">
+            <MapPin className="w-4 h-4 text-amber-500" />
+            Beograd, Srbija
+          </span>
+          <span className="flex items-center gap-2">
+            <Mail className="w-4 h-4 text-amber-500" />
+            joksimovicboro@gmail.com
+          </span>
+          <a href="tel:+38163242849" className="flex items-center gap-2 hover:text-amber-400 transition-colors">
+            <Phone className="w-4 h-4 text-amber-500" />
+            +381 63 242 849
+          </a>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-stone-200">
+      <header className="sticky top-0 z-50 bg-white shadow-md">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-3 group">
               <img 
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
                 alt="PrestigeKreč Logo"
-                className="w-12 h-12 object-contain transition-transform group-hover:scale-105"
+                className="w-14 h-14 object-contain transition-transform group-hover:scale-105"
               />
               <div>
-                <span className="font-bold text-xl tracking-tight text-stone-900">
+                <span className="font-bold text-2xl tracking-tight text-stone-900">
                   PRESTIGE KREČ
                 </span>
                 <p className="text-xs text-stone-600">
@@ -79,12 +66,12 @@ export default function Layout({ children }) {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-10">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
                   to={createPageUrl(link.page)}
-                  className="text-stone-700 hover:text-amber-800 font-medium text-sm transition-colors"
+                  className="text-stone-700 hover:text-amber-600 font-medium text-base transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-600 after:transition-all hover:after:w-full"
                 >
                   {link.label}
                 </Link>
@@ -95,9 +82,9 @@ export default function Layout({ children }) {
             <div className="hidden lg:flex items-center gap-4">
               <a
                 href="tel:+38163242849"
-                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2.5 rounded-lg transition-all hover:shadow-lg text-sm"
+                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full transition-all hover:shadow-xl text-base"
               >
-                Pozovite nas
+                Kontaktirajte
               </a>
             </div>
 
