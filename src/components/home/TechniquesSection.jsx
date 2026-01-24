@@ -5,32 +5,32 @@ import { ArrowRight } from 'lucide-react';
 const techniques = [
   {
     name: 'Traventino',
-    image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?w=500&q=80',
     description: 'Elegantna tekstura koja imitira prirodni kamen',
   },
   {
     name: 'Otocento',
-    image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=500&q=80',
     description: 'Baršunast završetak sa metalnim sjajem',
   },
   {
     name: 'Marmorino',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&q=80',
     description: 'Klasična tehnika imitacije mermera',
   },
   {
     name: 'Velvet',
-    image: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500&q=80',
     description: 'Mekani, svilenkasti završetak površine',
   },
   {
     name: 'Špatulat',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&q=80',
     description: 'Moderna tehnika sa glatkim prelivima',
   },
   {
     name: 'Sahara',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=500&q=80',
     description: 'Efektna tehnika peščane teksture',
   },
 ];
