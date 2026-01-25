@@ -154,18 +154,7 @@ export default function Layout({ children }) {
                 Vaš pouzdan partner za vrhunske molerske i gipsarske radove. 
                 Specijalizovani za gletovanje, krečenje i dekorativne tehnike.
               </p>
-              <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all">
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition-all">
-                  <Linkedin className="w-5 h-5" />
-                </a>
               </div>
-            </div>
 
             {/* Quick links */}
             <div>
