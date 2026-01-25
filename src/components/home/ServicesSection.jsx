@@ -90,9 +90,7 @@ export default function ServicesSection() {
                   <p className="text-slate-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {service.description}
                   </p>
-                  <button className="flex items-center gap-2 text-amber-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
-                    Saznaj više <ArrowRight className="w-4 h-4" />
-                  </button>
+
                 </div>
               </div>
             </motion.div>
