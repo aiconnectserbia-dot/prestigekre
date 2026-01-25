@@ -49,9 +49,9 @@ export default function HeroSection() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="space-y-3 sm:space-y-4"
             >
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight sm:leading-tight text-white">
                 Pretvorite svoj prostor u
-                <span className="block text-amber-400 mt-1 sm:mt-2">
+                <span className="block text-amber-400 mt-2 sm:mt-2">
                   umetničko delo
                 </span>
               </h1>
