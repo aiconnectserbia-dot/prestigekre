@@ -20,7 +20,7 @@ export default function Home() {
       <TestimonialsSection />
       <FAQSection />
       <ServicesSection />
-      <ContactSection />
+      <GallerySection />
     </div>
   );
 }
