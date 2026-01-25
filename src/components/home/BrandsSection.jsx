@@ -79,19 +79,7 @@ export default function BrandsSection() {
           ))}
         </div>
 
-        {/* Bottom badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-12 text-center"
-        >
-          <div className="inline-flex items-center gap-3 bg-amber-500/10 border border-amber-500/30 rounded-full px-6 py-3">
-            <CheckCircle className="w-5 h-5 text-amber-400" />
-            <span className="text-amber-100 font-medium">Svi materijali su visokokvalitetni i sertifikovani</span>
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );
