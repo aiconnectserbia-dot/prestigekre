@@ -71,25 +71,8 @@ export default function BeforeAfterSection() {
             onTouchStart={() => setIsDragging(true)}
             onTouchEnd={() => setIsDragging(false)}
           >
-            {/* Before Image (Background) */}
+            {/* After Image (Background - Left side) */}
             <div className="relative aspect-[16/10] lg:aspect-[16/9]">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/4b47f9730_10.jpg"
-                alt="Pre renovacije"
-                className="w-full h-full object-cover"
-              />
-              
-              {/* Before Label */}
-              <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
-                PRE
-              </div>
-            </div>
-
-            {/* After Image (Overlay with clip) */}
-            <div 
-              className="absolute inset-0"
-              style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
-            >
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/3e2a6a1af_15.jpg"
                 alt="Posle renovacije"
@@ -97,8 +80,25 @@ export default function BeforeAfterSection() {
               />
               
               {/* After Label */}
-              <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
+              <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
                 POSLE
+              </div>
+            </div>
+
+            {/* Before Image (Overlay - Right side) */}
+            <div 
+              className="absolute inset-0"
+              style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
+            >
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/4b47f9730_10.jpg"
+                alt="Pre renovacije"
+                className="w-full h-full object-cover object-left"
+              />
+              
+              {/* Before Label */}
+              <div className="absolute top-4 right-4 bg-red-600 text-white px-4 py-2 rounded-full font-semibold text-sm shadow-lg">
+                PRE
               </div>
             </div>
 
