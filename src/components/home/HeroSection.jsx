@@ -4,7 +4,7 @@ import { Phone, Award, CheckCircle2, Sparkles } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden w-full">
+    <section className="relative min-h-screen overflow-hidden w-full lg:pt-0">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
