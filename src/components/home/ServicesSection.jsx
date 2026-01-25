@@ -83,11 +83,11 @@ export default function ServicesSection() {
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="w-14 h-14 rounded-xl bg-amber-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <service.icon className="w-7 h-7 text-slate-900" />
+                  <div className="w-8 h-8 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-amber-500 flex items-center justify-center mb-2 sm:mb-4 group-hover:scale-110 transition-transform">
+                    <service.icon className="w-4 h-4 sm:w-7 sm:h-7 text-slate-900" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
-                  <p className="text-slate-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-xs sm:text-2xl font-bold text-white mb-1 sm:mb-2">{service.title}</h3>
+                  <p className="text-slate-300 text-[10px] sm:text-sm mb-2 sm:mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block">
                     {service.description}
                   </p>
 
