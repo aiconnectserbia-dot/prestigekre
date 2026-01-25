@@ -209,7 +209,7 @@ export default function Layout({ children }) {
         <div className="border-t border-slate-800">
           <div className="container mx-auto px-4 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-sm">
-              © 2024 PRESTIGE KREČ. Sva prava zadržana.
+              © 2026 PRESTIGE KREČ. Sva prava zadržana.
             </p>
             <p className="text-slate-500 text-sm">
               Dizajn i razvoj
