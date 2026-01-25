@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 const techniques = [
   {
     name: 'Traventino',
-    image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?w=500&q=80',
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/490985c46_Seramiksan_NEWTRAVERTIN.jpeg',
     description: 'Elegantna tekstura koja imitira prirodni kamen',
   },
   {
