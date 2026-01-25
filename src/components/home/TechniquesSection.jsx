@@ -30,7 +30,7 @@ const techniques = [
   },
   {
     name: 'Sahara',
-    image: 'https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=500&q=80',
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/6efcc53cd_SaharaNightsTexturedPlainWallpaper-Beige.jpeg',
     description: 'Efektna tehnika peščane teksture',
   },
 ];
