@@ -74,9 +74,9 @@ export default function BeforeAfterSection() {
             {/* Before Image (Background) */}
             <div className="relative aspect-[16/10] lg:aspect-[16/9]">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/5794e9767_10.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/8dfd5a717_15.jpg"
                 alt="Pre renovacije"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover absolute inset-0"
               />
               
               {/* Before Label */}
@@ -91,9 +91,9 @@ export default function BeforeAfterSection() {
               style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/8dfd5a717_15.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/5794e9767_10.jpg"
                 alt="Posle renovacije"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover absolute inset-0"
               />
               
               {/* After Label */}
