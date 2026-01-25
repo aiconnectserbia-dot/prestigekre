@@ -27,7 +27,7 @@ export default function Layout({ children }) {
   return (
     <div className="min-h-screen bg-[#F5F1E8] overflow-x-hidden">
       {/* Top bar */}
-      <div className="bg-stone-800 text-stone-200 py-3 text-sm hidden lg:block">
+      <div className="bg-stone-800 text-stone-200 py-3 text-sm hidden">
         <div className="container mx-auto px-4 lg:px-8 flex items-center gap-8">
           <span className="flex items-center gap-2">
             <MapPin className="w-4 h-4 text-amber-500" />
