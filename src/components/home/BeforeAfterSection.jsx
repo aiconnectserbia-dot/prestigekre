@@ -77,7 +77,7 @@ export default function BeforeAfterSection() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/3e2a6a1af_15.jpg"
                 alt="Posle renovacije"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: 'left 5%' }}
+                style={{ objectPosition: 'left 50%' }}
               />
               
               {/* After Label */}
