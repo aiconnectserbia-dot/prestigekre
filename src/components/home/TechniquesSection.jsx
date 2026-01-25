@@ -20,7 +20,7 @@ const techniques = [
   },
   {
     name: 'Velvet',
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500&q=80',
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/1e89a7f0f_velvet.jpg',
     description: 'Mekani, svilenkasti završetak površine',
   },
   {
