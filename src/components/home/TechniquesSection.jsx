@@ -15,7 +15,7 @@ const techniques = [
   },
   {
     name: 'Marmorino',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&q=80',
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/4b9e37912_ChauxMarmorino-faadeextrieur.jpg',
     description: 'Klasična tehnika imitacije mermera',
   },
   {
