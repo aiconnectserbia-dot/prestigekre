@@ -45,7 +45,7 @@ export default function Layout({ children }) {
       </div>
 
       {/* Main Navigation */}
-      <header className="sticky top-0 z-50 bg-white lg:bg-transparent lg:backdrop-blur-md shadow-md lg:shadow-none">
+      <header className="sticky top-0 z-50 bg-white lg:bg-black/10 lg:backdrop-blur-sm shadow-md lg:shadow-none">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
