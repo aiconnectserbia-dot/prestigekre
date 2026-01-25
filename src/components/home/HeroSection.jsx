@@ -104,14 +104,14 @@ export default function HeroSection() {
             >
               <a
                 href="tel:+38163242849"
-                className="group inline-flex items-center justify-center gap-2 sm:gap-3 bg-amber-500 hover:bg-amber-600 text-stone-900 font-bold px-6 py-3 sm:px-10 sm:py-5 rounded-full transition-all hover:shadow-2xl hover:scale-105 text-base sm:text-lg"
+                className="group inline-flex items-center justify-center gap-2 sm:gap-3 bg-amber-500/20 hover:bg-amber-500/30 backdrop-blur-sm border border-amber-500/30 text-amber-200 font-bold px-6 py-3 sm:px-10 sm:py-5 rounded-full transition-all hover:shadow-2xl hover:scale-105 text-base sm:text-lg"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-pulse" />
                 Pozovite nas
               </a>
               <a
                 href="#tehnike"
-                className="inline-flex items-center justify-center px-6 py-3 sm:px-10 sm:py-5 border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm font-semibold rounded-full transition-all text-base sm:text-lg"
+                className="inline-flex items-center justify-center px-6 py-3 sm:px-10 sm:py-5 bg-amber-500/20 hover:bg-amber-500/30 backdrop-blur-sm border border-amber-500/30 text-amber-200 font-semibold rounded-full transition-all text-base sm:text-lg"
               >
                 Pogledajte tehnike
               </a>
