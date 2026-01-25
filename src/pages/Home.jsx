@@ -8,6 +8,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import FAQSection from '@/components/home/FAQSection';
 import ServicesSection from '@/components/home/ServicesSection';
 import GallerySection from '@/components/home/GallerySection';
+import BeforeAfterSection from '@/components/home/BeforeAfterSection';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <TestimonialsSection />
       <FAQSection />
       <ServicesSection />
+      <BeforeAfterSection />
       <GallerySection />
     </div>
   );
