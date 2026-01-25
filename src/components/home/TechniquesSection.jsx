@@ -10,7 +10,7 @@ const techniques = [
   },
   {
     name: 'Otocento',
-    image: 'https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=500&q=80',
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/c9aaacccd_otocento.jpeg',
     description: 'Baršunast završetak sa metalnim sjajem',
   },
   {
