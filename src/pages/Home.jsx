@@ -7,7 +7,7 @@ import WhyUsSection from '@/components/home/WhyUsSection';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
 import FAQSection from '@/components/home/FAQSection';
 import ServicesSection from '@/components/home/ServicesSection';
-import ContactSection from '@/components/home/ContactSection';
+import GallerySection from '@/components/home/GallerySection';
 
 export default function Home() {
   return (
