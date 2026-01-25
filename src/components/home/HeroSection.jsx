@@ -112,6 +112,10 @@ export default function HeroSection() {
               <a
                 href="#tehnike"
                 className="inline-flex items-center justify-center px-6 py-3 sm:px-10 sm:py-5 bg-amber-500/20 hover:bg-amber-500/30 backdrop-blur-sm border border-amber-500/30 text-amber-200 font-semibold rounded-full transition-all text-base sm:text-lg"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('tehnike')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 Pogledajte tehnike
               </a>
