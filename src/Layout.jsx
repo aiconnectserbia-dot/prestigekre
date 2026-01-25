@@ -49,17 +49,17 @@ export default function Layout({ children }) {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to={createPageUrl('Home')} className="flex items-center gap-3 group">
+            <Link to={createPageUrl('Home')} className="flex items-center gap-2 lg:gap-3 group">
               <img 
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
                 alt="PrestigeKreč Logo"
-                className="w-14 h-14 object-contain transition-transform group-hover:scale-105"
+                className="w-10 h-10 lg:w-14 lg:h-14 object-contain transition-transform group-hover:scale-105"
               />
               <div>
-                <span className="font-bold text-2xl tracking-tight text-stone-900">
+                <span className="font-bold text-lg lg:text-2xl tracking-tight text-stone-900">
                   PRESTIGE KREČ
                 </span>
-                <p className="text-xs text-stone-600">
+                <p className="text-[10px] lg:text-xs text-stone-600">
                   Gletovanje • Krečenje • Gipsarski radovi
                 </p>
               </div>
