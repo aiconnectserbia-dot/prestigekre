@@ -39,24 +39,24 @@ export default function WhyUsSection() {
               Naša najveća preporuka su zadovoljni klijenti koji nam se vraćaju i preporučuju nas drugima.
             </p>
 
-            <div className="space-y-4 pt-4">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+              <div className="flex sm:flex-col items-center sm:items-start gap-4 sm:gap-3">
+                <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center flex-shrink-0">
                   <GraduationCap className="w-6 h-6 text-amber-600" />
                 </div>
-                <span className="text-slate-700 font-medium text-lg">Majstori sa iskustvom</span>
+                <span className="text-slate-700 font-medium text-base sm:text-lg">Majstori sa iskustvom</span>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center">
+              <div className="flex sm:flex-col items-center sm:items-start gap-4 sm:gap-3">
+                <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center flex-shrink-0">
                   <Palette className="w-6 h-6 text-amber-600" />
                 </div>
-                <span className="text-slate-700 font-medium text-lg">Najkvalitetniji materijali</span>
+                <span className="text-slate-700 font-medium text-base sm:text-lg">Najkvalitetniji materijali</span>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center">
+              <div className="flex sm:flex-col items-center sm:items-start gap-4 sm:gap-3">
+                <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center flex-shrink-0">
                   <ShieldCheck className="w-6 h-6 text-amber-600" />
                 </div>
-                <span className="text-slate-700 font-medium text-lg">Garancija na izvršene radove</span>
+                <span className="text-slate-700 font-medium text-base sm:text-lg">Garancija na izvršene radove</span>
               </div>
             </div>
 

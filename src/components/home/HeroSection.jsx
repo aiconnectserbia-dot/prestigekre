@@ -47,11 +47,11 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="space-y-4"
+              className="space-y-3 sm:space-y-4"
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-white">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
                 Pretvorite svoj prostor u
-                <span className="block text-amber-400 mt-2">
+                <span className="block text-amber-400 mt-1 sm:mt-2">
                   umetničko delo
                 </span>
               </h1>
@@ -62,7 +62,7 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="text-stone-200 text-lg lg:text-xl leading-relaxed max-w-xl"
+              className="text-stone-200 text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl"
             >
               Specijalizovani za gletovanje, krečenje i vrhunske dekorativne tehnike. 
               Garantujemo besprekoran kvalitet i preciznost u svakom projektu.
@@ -73,24 +73,24 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-6"
+              className="flex flex-wrap gap-4 sm:gap-6"
             >
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center">
-                  <CheckCircle2 className="w-6 h-6 text-amber-400" />
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400" />
                 </div>
                 <div>
-                  <p className="text-white font-semibold">10+ godina</p>
-                  <p className="text-stone-400 text-sm">iskustva</p>
+                  <p className="text-white font-semibold text-sm sm:text-base">10+ godina</p>
+                  <p className="text-stone-400 text-xs sm:text-sm">iskustva</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center">
-                  <Award className="w-6 h-6 text-amber-400" />
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+                  <Award className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400" />
                 </div>
                 <div>
-                  <p className="text-white font-semibold">200+ projekata</p>
-                  <p className="text-stone-400 text-sm">uspešno završenih</p>
+                  <p className="text-white font-semibold text-sm sm:text-base">200+ projekata</p>
+                  <p className="text-stone-400 text-xs sm:text-sm">uspešno završenih</p>
                 </div>
               </div>
             </motion.div>
@@ -100,18 +100,18 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4"
             >
               <a
                 href="tel:+38163242849"
-                className="group inline-flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-600 text-stone-900 font-bold px-10 py-5 rounded-full transition-all hover:shadow-2xl hover:scale-105 text-lg"
+                className="group inline-flex items-center justify-center gap-2 sm:gap-3 bg-amber-500 hover:bg-amber-600 text-stone-900 font-bold px-6 py-3 sm:px-10 sm:py-5 rounded-full transition-all hover:shadow-2xl hover:scale-105 text-base sm:text-lg"
               >
-                <Phone className="w-5 h-5 group-hover:animate-pulse" />
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-pulse" />
                 Pozovite nas
               </a>
               <a
                 href="#tehnike"
-                className="inline-flex items-center justify-center px-10 py-5 border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm font-semibold rounded-full transition-all text-lg"
+                className="inline-flex items-center justify-center px-6 py-3 sm:px-10 sm:py-5 border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm font-semibold rounded-full transition-all text-base sm:text-lg"
               >
                 Pogledajte tehnike
               </a>
