@@ -45,21 +45,21 @@ export default function Layout({ children }) {
       </div>
 
       {/* Main Navigation */}
-      <header className="sticky top-0 z-50 bg-white shadow-md">
+      <header className="sticky top-0 z-50 bg-white lg:bg-transparent lg:backdrop-blur-md shadow-md lg:shadow-none">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to={createPageUrl('Home')} className="flex items-center gap-2 lg:gap-5 group lg:-ml-8">
+            <Link to={createPageUrl('Home')} className="flex items-center gap-2 lg:gap-3 group">
               <img 
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
                 alt="PrestigeKreč Logo"
-                className="w-10 h-10 lg:w-28 lg:h-28 object-contain transition-transform group-hover:scale-105"
+                className="w-10 h-10 lg:w-14 lg:h-14 object-contain transition-transform group-hover:scale-105"
               />
               <div>
-                <span className="font-bold text-lg lg:text-5xl tracking-tight text-stone-900">
+                <span className="font-bold text-lg lg:text-2xl tracking-tight text-stone-900 lg:text-white">
                   PRESTIGE KREČ
                 </span>
-                <p className="text-[10px] lg:text-lg text-stone-600">
+                <p className="text-[10px] lg:text-xs text-stone-600 lg:text-stone-200">
                   Gletovanje • Krečenje • Gipsarski radovi
                 </p>
               </div>
@@ -71,7 +71,7 @@ export default function Layout({ children }) {
                 <Link
                   key={link.label}
                   to={createPageUrl(link.page)}
-                  className="text-stone-700 hover:text-amber-600 font-medium text-base transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-600 after:transition-all hover:after:w-full"
+                  className="text-white hover:text-amber-400 font-medium text-base uppercase tracking-wide transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-400 after:transition-all hover:after:w-full"
                 >
                   {link.label}
                 </Link>
@@ -82,7 +82,7 @@ export default function Layout({ children }) {
             <div className="hidden lg:flex items-center gap-4">
               <a
                 href="tel:+38163242849"
-                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full transition-all hover:shadow-xl text-base"
+                className="bg-amber-500/20 hover:bg-amber-500/30 backdrop-blur-sm border border-amber-500/30 text-amber-200 font-semibold px-8 py-3 rounded-full transition-all hover:shadow-xl text-base uppercase tracking-wide"
               >
                 Kontaktirajte
               </a>
