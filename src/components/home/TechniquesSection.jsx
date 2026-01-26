@@ -74,8 +74,9 @@ export default function TechniquesSection() {
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src={technique.image}
-                  alt={technique.name}
+                  alt={`${technique.name} dekorativna tehnika - ${technique.description} - Prestige Kreč`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
                 />
               </div>
               

@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=1920&q=80"
-          alt="Background"
+          alt="Profesionalni molerski radovi - gletovanje i krečenje zidova u Beogradu"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-stone-900/90 via-stone-900/75 to-stone-900/60"></div>
@@ -134,7 +134,7 @@ export default function HeroSection() {
               <div className="relative w-full h-[600px] rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=80"
-                  alt="Molerski radovi"
+                  alt="Kvalitetno gletovanje zidova - Prestige Kreč Beograd"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent"></div>
