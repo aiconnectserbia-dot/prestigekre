@@ -4,6 +4,11 @@ import { ArrowRight } from 'lucide-react';
 
 const techniques = [
   {
+    name: 'Sahara',
+    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/6efcc53cd_SaharaNightsTexturedPlainWallpaper-Beige.jpeg',
+    description: 'Efektna tehnika peščane teksture',
+  },
+  {
     name: 'Traventino',
     image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/490985c46_Seramiksan_NEWTRAVERTIN.jpeg',
     description: 'Elegantna tekstura koja imitira prirodni kamen',
@@ -27,11 +32,6 @@ const techniques = [
     name: 'Špatulat',
     image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/5ee762566_spatulat.jpeg',
     description: 'Moderna tehnika sa glatkim prelivima',
-  },
-  {
-    name: 'Sahara',
-    image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/6efcc53cd_SaharaNightsTexturedPlainWallpaper-Beige.jpeg',
-    description: 'Efektna tehnika peščane teksture',
   },
 ];
 
