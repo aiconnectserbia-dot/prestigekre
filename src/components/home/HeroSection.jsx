@@ -26,7 +26,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start"
           >
             {/* Badge */}
             <motion.div 
@@ -62,7 +62,7 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="text-stone-200 text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl"
+              className="text-stone-200 text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0"
             >
               Specijalizovani za gletovanje, krečenje i vrhunske dekorativne tehnike. 
               Garantujemo besprekoran kvalitet i preciznost u svakom projektu.
@@ -73,7 +73,7 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-4 sm:gap-6"
+              className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start"
             >
               <div className="flex items-center gap-2 sm:gap-3">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0">
