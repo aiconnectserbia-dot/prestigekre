@@ -17,7 +17,7 @@ export default function Home() {
     "@type": "LocalBusiness",
     "name": "Prestige Kreč",
     "description": "Profesionalni molerski i gipsarski radovi u Beogradu. Specijalizovani za gletovanje, krečenje i dekorativne tehnike - Sahara, Travertino, Otocento, Marmorino, Velvet, Špatulat.",
-    "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png",
+    "image": "https://res.cloudinary.com/dnik9se1m/image/upload/v1774472430/logo_prestige_krec_jsqvmy.png",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Beograd",
@@ -94,7 +94,7 @@ export default function Home() {
         <meta property="og:url" content={window.location.href} />
         <meta property="og:title" content="Prestige Kreč - Gletovanje, Krečenje i Dekorativne Tehnike Beograd" />
         <meta property="og:description" content="Profesionalni molerski i gipsarski radovi. 10+ godina iskustva, 200+ projekata. Specijalizovani za gletovanje, krečenje i dekorativne tehnike." />
-        <meta property="og:image" content="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png" />
+        <meta property="og:image" content="https://res.cloudinary.com/dnik9se1m/image/upload/v1774472430/logo_prestige_krec_jsqvmy.png" />
         <meta property="og:locale" content="sr_RS" />
         
         {/* Geo Tags */}

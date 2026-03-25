@@ -53,7 +53,7 @@ export default function AboutSection() {
           >
             <div className="flex items-center gap-3">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
+                src="https://res.cloudinary.com/dnik9se1m/image/upload/v1774472430/logo_prestige_krec_jsqvmy.png"
                 alt="PrestigeKreč Logo"
                 className="w-10 h-10 object-contain"
               />

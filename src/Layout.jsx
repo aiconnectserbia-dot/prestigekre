@@ -51,7 +51,7 @@ export default function Layout({ children }) {
             {/* Logo */}
             <Link to={createPageUrl('Home')} className="flex items-center gap-2 lg:gap-3 group">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
+                src="https://res.cloudinary.com/dnik9se1m/image/upload/v1774472430/logo_prestige_krec_jsqvmy.png"
                 alt="Prestige Kreč - Molerski i gipsarski radovi Beograd"
                 className="w-10 h-10 lg:w-14 lg:h-14 object-contain transition-transform group-hover:scale-105"
               />
@@ -141,7 +141,7 @@ export default function Layout({ children }) {
             <div className="space-y-6">
               <div className="flex items-center gap-3">
                 <img 
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6970d094440390ca64c51e76/ca2cca1d8_logoprestigekre.png"
+                  src="https://res.cloudinary.com/dnik9se1m/image/upload/v1774472430/logo_prestige_krec_jsqvmy.png"
                   alt="Prestige Kreč logo"
                   className="w-14 h-14 object-contain"
                 />
