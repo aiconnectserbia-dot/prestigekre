@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import HeroSection from '@/components/home/HeroSection';
 import AboutSection from '@/components/home/AboutSection';
-import TechniquesSection from '@/components/home/TechniquesSection';
 import BrandsSection from '@/components/home/BrandsSection';
 import WhyUsSection from '@/components/home/WhyUsSection';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
@@ -117,7 +116,6 @@ export default function Home() {
 
       <HeroSection />
       <AboutSection />
-      <TechniquesSection />
       <BrandsSection />
       <WhyUsSection />
       <TestimonialsSection />
